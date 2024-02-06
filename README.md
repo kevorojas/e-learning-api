@@ -17,7 +17,7 @@ Bienvenido a nuestra aplicación de aprendizaje electrónico. Esta aplicación u
 2. Navega al directorio del proyecto:
 
     ```bash
-    cd aplicacion-aprendizaje-electronico
+    cd e-learning-api
     ```
 
 3. Copia el archivo de ejemplo `.env.example` y renómbralo a `.env`. Luego, edita el archivo `.env` y proporciona los valores adecuados para las variables de entorno.
@@ -48,7 +48,7 @@ Bienvenido a nuestra aplicación de aprendizaje electrónico. Esta aplicación u
 2. Navega al directorio del proyecto:
 
     ```bash
-    cd aplicacion-aprendizaje-electronico
+    cd e-learning-api
     ```
 
 3. Copia el archivo de ejemplo `.env.example` y renómbralo a `.env`. Luego, edita el archivo `.env` y proporciona los valores adecuados para las variables de entorno, especialmente la conexión a la base de datos PostgreSQL.
@@ -75,7 +75,3 @@ Asegúrate de configurar las siguientes variables de entorno en el archivo `.env
 
 - `DATABASE_URL`: La URL de conexión a la base de datos PostgreSQL.
 - Otras variables específicas según las necesidades de tu aplicación.
-
----
-
-Esperamos que disfrutes utilizando nuestra aplicación de aprendizaje electrónico. Si tienes alguna pregunta o encuentras algún problema, no dudes en contactarnos.
