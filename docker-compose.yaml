@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  # PostgreSQL service
+  db:
+    image: postgres:latest
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: your_postgres_user
+      POSTGRES_PASSWORD: your_postgres_password
+      POSTGRES_DB: your_database_name
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  # FastAPI service
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    environment:
+      DATABASE_URL: postgresql://your_postgres_user:your_postgres_password@db/your_database_name
+
+volumes:
+  postgres_data:

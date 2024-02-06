@@ -1,0 +1,12 @@
+# Ignorar archivos y directorios específicos
+__pycache__
+*.pyc
+
+# Ignorar archivos de configuración local
+.env
+
+# Ignorar archivos generados por el sistema
+.DS_Store
+
+# Ignorar archivos de logs
+logs/
